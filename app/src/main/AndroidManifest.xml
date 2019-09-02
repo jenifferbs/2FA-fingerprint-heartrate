@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jen.fingerprint_heartrate_auth">
 
-    <uses-feature
-        android:name="android.hardware.fingerprint"
-        android:required="true" />
+    <uses-feature android:name="android.hardware.fingerprint" android:required="true" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true" />
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -19,14 +19,12 @@
         android:appComponentFactory="androidx"
         tools:replace="android:appComponentFactory">
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FingerprintActivity" android:label="@string/title_activity_fingerprint">
+        <activity
+            android:name=".FingerprintActivity"
+            android:label="@string/title_activity_fingerprint">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -35,6 +33,10 @@
         <activity
             android:name=".HeartRateActivity"
             android:label="@string/title_activity_heart_rate"/>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

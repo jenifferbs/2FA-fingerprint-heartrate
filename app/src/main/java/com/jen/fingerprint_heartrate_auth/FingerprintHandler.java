@@ -21,8 +21,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         context = mContext;
     }
 
-    public void startAuth(FingerprintManager manager, FingerprintManager.CryptoObject cryptoObject) {
-        CancellationSignal cancellationSignal = new CancellationSignal();
+    public void startAuth(FingerprintManager manager) {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.USE_FINGERPRINT) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -46,7 +45,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
 
     @Override
     public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) {
-        this.update("Fingerprint Authentication succeeded.", true);
+        //this.update("Fingerprint Authentication succeeded.", true);
         Intent i = new Intent(context, HeartRateActivity.class);
         context.startActivity(i);
     }

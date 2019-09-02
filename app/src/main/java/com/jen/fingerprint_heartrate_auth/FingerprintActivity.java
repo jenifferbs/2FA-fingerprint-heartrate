@@ -17,6 +17,16 @@ public class FingerprintActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        authenticate();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        authenticate();
+    }
+
+    private void authenticate() {
         setContentView(R.layout.activity_fingerprint);
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
@@ -40,7 +50,7 @@ public class FingerprintActivity extends AppCompatActivity {
                         textView.setText("Lock screen security not enabled in Settings");
                     } else {
                         FingerprintHandler helper = new FingerprintHandler(this);
-                        helper.startAuth(fingerprintManager, null);
+                        helper.startAuth(fingerprintManager);
                     }
                 }
             }
