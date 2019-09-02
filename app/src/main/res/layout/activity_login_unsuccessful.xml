@@ -24,7 +24,18 @@
             android:layout_marginBottom="30dp"/>
 
         <TextView
-            android:id="@+id/title_login_unsuccessful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="24sp"
+            android:text="@string/title_login_unsuccessful"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/message_login_unsuccessful"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/textPrimary"

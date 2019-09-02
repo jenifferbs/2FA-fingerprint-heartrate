@@ -17,7 +17,7 @@ public class LoginSuccessfulActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        textView = findViewById(R.id.title_login_successful);
+        textView = findViewById(R.id.message_login_successful);
         Bundle b = getIntent().getExtras();
 
         String bpm = b.getString("bpm");

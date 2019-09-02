@@ -17,7 +17,7 @@ public class LoginUnsuccessfulActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        textView = findViewById(R.id.title_login_unsuccessful);
+        textView = findViewById(R.id.message_login_unsuccessful);
         Bundle b = getIntent().getExtras();
 
         String bpm = b.getString("bpm");

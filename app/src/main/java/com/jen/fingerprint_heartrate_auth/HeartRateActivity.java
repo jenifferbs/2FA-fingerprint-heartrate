@@ -173,9 +173,6 @@ public class HeartRateActivity extends AppCompatActivity {
             i.putExtra("bpm", String.valueOf(HEART_RATE_BPM));
             this.startActivity(i);
         } else {
-            TextView textView = findViewById(R.id.bpm_info);
-            textView.setText("Frequência = " + HEART_RATE_BPM + " BPM. Tente novamente.");
-
             Intent i = new Intent(this, LoginUnsuccessfulActivity.class);
             i.putExtra("bpm", String.valueOf(HEART_RATE_BPM));
             this.startActivity(i);
