@@ -168,11 +168,16 @@ public class HeartRateActivity extends AppCompatActivity {
         med = (int) timeDistance[timeDistance.length / 2];
         HEART_RATE_BPM = 60000 / med;
 
-        TextView textView = findViewById(R.id.bpm_info);
-        textView.setText("Heart Rate = " + HEART_RATE_BPM + " BPM");
-
         if(HEART_RATE_BPM > 80) {
-            Intent i = new Intent(this, HomeActivity.class);
+            Intent i = new Intent(this, LoginSuccessfulActivity.class);
+            i.putExtra("bpm", String.valueOf(HEART_RATE_BPM));
+            this.startActivity(i);
+        } else {
+            TextView textView = findViewById(R.id.bpm_info);
+            textView.setText("Frequência = " + HEART_RATE_BPM + " BPM. Tente novamente.");
+
+            Intent i = new Intent(this, LoginUnsuccessfulActivity.class);
+            i.putExtra("bpm", String.valueOf(HEART_RATE_BPM));
             this.startActivity(i);
         }
 

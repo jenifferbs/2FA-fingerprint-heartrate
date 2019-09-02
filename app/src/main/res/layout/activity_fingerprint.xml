@@ -42,7 +42,7 @@
             android:textAlignment="center"
             android:gravity="center"
             android:id="@+id/desc"
-            android:text="@string/desc_fingerprint"
+            android:text="@string/description_fingerprint"
             android:layout_margin="16dp"
             android:paddingEnd="30dp"
             android:paddingStart="30dp"/>

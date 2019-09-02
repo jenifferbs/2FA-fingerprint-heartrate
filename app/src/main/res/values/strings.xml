@@ -1,16 +1,21 @@
 <resources>
-    <string name="app_name">Fingerprint and Heart Rate Authentication</string>
-    <string name="instructions">Place your fingertip on the scanner to verify your identity</string>
+    <string name="app_name">Autenticação por leitura biometrica e batimentos cardíacos</string>
+
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="title_activity_fingerprint">Fingerprint</string>
-    <string name="title_activity_heart_rate">Heart Rate</string>
-    <string name="title_fingerprint">One-touch Sign In</string>
-    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity</string>
-    <string name="note_fingerprint">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
-    <string name="activity_home_desc">You have successfully logged in with fingerprint authentication</string>
-    <string name="activity_home_note">Close and re-open the app to see the fingerprint auth screen again</string>
-    <string name="title_heart_rate">Touch the camera</string>
-    <string name="desc_heart_rate">Please place your fingertip on the camera to verify your identity</string>
-    <string name="note_heart_rate">Heart rate sign in makes your app login safer</string>
+    <string name="title_activity_fingerprint">Biometria</string>
+    <string name="title_activity_heart_rate">Leitura de BPM</string>
+    <string name="title_activity_login">Resultado</string>
+
+    <string name="title_fingerprint">Biometria</string>
+    <string name="description_fingerprint">Posicione seu dedo no leitor para verificar sua identidade</string>
+    <string name="note_fingerprint">Login por leitura biometrica torna o aplicativo mais rápido e seguro. Seu aparelho deve ter pelo menos uma digital registrada</string>
+
+    <string name="title_heart_rate">Leitura de batimentos cardíacos</string>
+    <string name="description_heart_rate">Posicione seu dedo na camera traseira para verificar a sua frequência cardíaca</string>
+    <string name="note_heart_rate">O login será concluído se os seus batimentos cardíacos por minuto (BPM) forem maiores que 80</string>
+
+    <string name="title_login_successful">Seu login foi efetuado com sucesso através de biometria e leitura de batimentos cardíacos</string>
+    <string name="title_login_unsuccessful">Seu login não foi efetuado. Batimentos cardíacos menores que 80 pulsos por minuto</string>
+    <string name="title_login_restart">Reinicie o aplicativo para logar novamente</string>
+
 </resources>

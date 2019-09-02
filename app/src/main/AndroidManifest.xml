@@ -34,8 +34,12 @@
             android:name=".HeartRateActivity"
             android:label="@string/title_activity_heart_rate"/>
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
+            android:name=".LoginSuccessfulActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LoginUnsuccessfulActivity"
+            android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
